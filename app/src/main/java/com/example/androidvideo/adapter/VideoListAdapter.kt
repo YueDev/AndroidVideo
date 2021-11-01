@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.ImageLoader
 import coil.load
 import com.example.androidvideo.R
 import com.example.androidvideo.bean.VideoBean
@@ -37,6 +38,7 @@ class VideoListAdapter @Inject constructor() : ListAdapter<VideoBean, VideoListA
         private val authorTextView = itemView.findViewById<TextView>(R.id.authorTextView)
 
         fun bind(videoBean: VideoBean) {
+
             imageView.load(videoBean.imgUrl)
             titleTextView.text = videoBean.videoTitle
             authorTextView.text = videoBean.userName
