@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.ImageLoader
 import coil.load
+import com.bumptech.glide.Glide
 import com.example.androidvideo.R
 import com.example.androidvideo.bean.VideoBean
 import javax.inject.Inject
@@ -39,7 +40,9 @@ class VideoListAdapter @Inject constructor() : ListAdapter<VideoBean, VideoListA
 
         fun bind(videoBean: VideoBean) {
 
-            imageView.load(videoBean.imgUrl)
+            //coil's disk cache use okhttp cache. if there is network,it seems not used.
+            //use glide to load image.
+            Glide.with(imageView.context).load(videoBean.imgUrl).into(imageView)
             titleTextView.text = videoBean.videoTitle
             authorTextView.text = videoBean.userName
         }
