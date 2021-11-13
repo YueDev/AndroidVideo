@@ -7,8 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import coil.ImageLoader
-import coil.load
 import com.bumptech.glide.Glide
 import com.example.androidvideo.R
 import com.example.androidvideo.bean.VideoBean
@@ -31,8 +29,6 @@ class VideoListAdapter @Inject constructor() : ListAdapter<VideoBean, VideoListA
 
 
     class VideoHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-
 
         private val imageView = itemView.findViewById<ImageView>(R.id.imageView)
         private val titleTextView = itemView.findViewById<TextView>(R.id.titleTextView)

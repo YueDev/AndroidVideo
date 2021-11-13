@@ -1,14 +1,9 @@
 package com.example.androidvideo
 
 import android.app.Application
-import coil.ImageLoader
-import coil.ImageLoaderFactory
-import coil.request.CachePolicy
-import coil.util.CoilUtils
 import dagger.hilt.android.HiltAndroidApp
-import okhttp3.OkHttpClient
 import timber.log.Timber
-import timber.log.Timber.*
+import timber.log.Timber.DebugTree
 
 
 /**
