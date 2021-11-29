@@ -16,7 +16,6 @@ class App : Application() {
         super.onCreate()
         if (BuildConfig.DEBUG) Timber.plant(DebugTree())
     }
-
     //coil recommended that use a singleton ImageLoader.
     //ImageLoader also can be created with hilt, but I can't inject to ViewHolder...
 //    override fun newImageLoader() = ImageLoader.Builder(applicationContext)
