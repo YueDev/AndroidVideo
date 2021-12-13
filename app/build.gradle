@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.example.androidvideo"
         minSdk 21
-        targetSdk 31
+        targetSdk 32
         versionCode 1
         versionName "0.1"
 
@@ -67,7 +67,7 @@ dependencies {
     //coil  image loader
     implementation 'io.coil-kt:coil:1.4.0'
 
-//    //Glide  another image loader
+    //Glide  another image loader
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     kapt 'com.github.bumptech.glide:compiler:4.12.0'
 
