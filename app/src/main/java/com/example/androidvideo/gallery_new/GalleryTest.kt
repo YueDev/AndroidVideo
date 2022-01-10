@@ -26,4 +26,11 @@ interface GalleryServices {
         imageId: Int
     ):ResponseBody
 
+    //test2
+    @GET("image/")
+    suspend fun getPhotoTest2(
+        @Query(value = "imageId")
+        imageId: Int
+    ):ResponseBody
+
 }
