@@ -24,13 +24,19 @@ interface GalleryServices {
     suspend fun getPhotoTest(
         @Query(value = "imageId")
         imageId: Int
-    ):ResponseBody
+    ): ResponseBody
 
     //test2
     @GET("image/")
     suspend fun getPhotoTest2(
         @Query(value = "imageId")
         imageId: Int
-    ):ResponseBody
+    ): ResponseBody
+    //test video
+    @GET("video/")
+    suspend fun getVideo(
+        @Query(value = "videoId") videoId: Int
+    ): ResponseBody
+
 
 }
