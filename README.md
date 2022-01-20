@@ -1,2 +1,2 @@
 # AndroidVideo
-Android hilt test
+Android hilt demo.
